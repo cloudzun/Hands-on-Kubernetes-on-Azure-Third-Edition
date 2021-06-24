@@ -42,4 +42,3 @@ jobs:
           context: ./Chapter15
           push: true
           tags: ${{ env.ACRNAME }}.azurecr.io/website/website:${{ github.run_number }}
-© 2021 GitHub, Inc.
