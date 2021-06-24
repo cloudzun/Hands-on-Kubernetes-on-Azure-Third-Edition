@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 # Env to set reusable variables
 env:
-  ACRNAME: handsonakspipeline
+  ACRNAME: handsonakspipeline # 替换为ACR的名字
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -54,8 +54,8 @@ jobs:
         uses: Azure/aks-set-context@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          resource-group: rg-handsonaks
-          cluster-name: handsonaks
+          resource-group: rg-handsonaks # 替换为自己的资源组名称
+          cluster-name: handsonaks # 替换为自己的AKS群集名称
 
       - name: Helm upgrade
         run: |
