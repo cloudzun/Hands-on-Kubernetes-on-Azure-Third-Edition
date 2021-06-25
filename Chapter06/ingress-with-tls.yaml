@@ -17,8 +17,8 @@ spec:
             name: frontend
             port: 
               number: 80
-    host: nf-aks-book.westus2.cloudapp.azure.com
+    host: chengzhagic.southeastasia.cloudapp.azure.com
   tls:
     - hosts:
-      - nf-aks-book.westus2.cloudapp.azure.com
+      - chengzhagic.southeastasia.cloudapp.azure.com
       secretName: frontend-tls
