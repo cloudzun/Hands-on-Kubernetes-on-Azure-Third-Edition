@@ -17,8 +17,8 @@ spec:
             name: frontend
             port: 
               number: 80
-    host: <your DNS prefix>.<your location>.cloudapp.azure.com
+    host: chengzhagic.southeastasia.cloudapp.azure.com
   tls:
     - hosts:
-      - <your DNS prefix>.<your location>.cloudapp.azure.com
+      - chengzhagic.southeastasia.cloudapp.azure.com
       secretName: frontend-prod-tls
