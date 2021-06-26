@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 # Env to set reusable variables
 env:
-  ACRNAME: chengzhacr0624
+  ACRNAME: chengzhacr0427
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -54,8 +54,8 @@ jobs:
         uses: Azure/aks-set-context@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          resource-group: Demo0624
-          cluster-name: chengzhaks0624
+          resource-group: myResourceGroup
+          cluster-name: myAKSCluster
 
       - name: Helm upgrade
         run: |
