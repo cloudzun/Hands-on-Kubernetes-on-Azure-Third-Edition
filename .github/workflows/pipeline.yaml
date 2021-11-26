@@ -70,4 +70,4 @@ jobs:
             PUBLICIP=$(kubectl get service website -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
             [ -z "$PUBLICIP" ] && sleep 10
           done
-          echo $PUBLICIP
+          echo $PUBLICIP           
